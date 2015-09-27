@@ -1,15 +1,10 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
-
-    <script src="outside.js"></script>
-	<script>
+function myFunction() {
+	
 		if (annyang) {
 		  // Let's define a command.
 		  var commands = {
 		    'hello': function() { alert('Hello world!');}
+		    'home': function() { window.location.href = "http://yahoo.com";;}
 		  };
 
 		  var google= {
@@ -17,14 +12,19 @@
 		  		window.location.href = "http://google.com";
 		  	}
 		  };
+
+		  var yahoo= {
+		  	'yahoo': function() {
+		  		alert('yahoo');
+		  	}
+		  };
 		  // Add our commands to annyang
 		  annyang.addCommands(commands);
+		  annyang.addCommands(yahoo);
 		  annyang.addCommands(google);
 
 
 		  // Start listening.
 		  annyang.start();
 		}
-	</script>
-  </body>
-</html>
+	}
