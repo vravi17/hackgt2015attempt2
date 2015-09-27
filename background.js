@@ -22,5 +22,9 @@ chrome.app.runtime.onLaunched.addListener(function() {
 		  annyang.start();
 		  alert("hi");
 		}
+<<<<<<< HEAD
+});
+>>>>>>> master
+=======
 });
 >>>>>>> master

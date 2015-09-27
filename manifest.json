@@ -7,7 +7,11 @@
   "app": {
     "background": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "scripts": ["background.js", "outside.js"]
+=======
+      "scripts": ["background.js", "readToMe.js"]
+>>>>>>> master
 =======
       "scripts": ["background.js", "readToMe.js"]
 >>>>>>> master
