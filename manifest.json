@@ -1,11 +1,17 @@
 {
-  "name": "Hello World!",
-  "description": "My first Chrome App.",
+  "name": "Seeing Is Hearing",
+  "description": "This extension allows visually impaired 
+        users to hear what is being displayed on the current webpage",
   "version": "0.1",
   "manifest_version": 2,
   "app": {
     "background": {
-      "scripts": ["background.js"]
+      "scripts": ["background.js", "outside.js"]
     }
-  }
+  },
+
+  "permissions": [
+  "background",
+  "audioCapture"
+  ]
 }
