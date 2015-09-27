@@ -6,7 +6,11 @@
   "manifest_version": 2,
   "app": {
     "background": {
+<<<<<<< HEAD
       "scripts": ["background.js", "outside.js"]
+=======
+      "scripts": ["background.js", "readToMe.js"]
+>>>>>>> master
     }
   },
 
